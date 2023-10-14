@@ -1,0 +1,35 @@
+:root {
+  --accent-color: #fd9222;
+  --accent-bg: #1e1823;
+  --main-bg: #fafafa;
+  --main-text-color: #111111;
+  --alfa-text: rgba(17, 17, 17, 0.7);
+  --second-text-color: #ffffff;
+  --ellipse-color: rgba(17, 17, 17, 0.1);
+  --typical-margin: 50px;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  font-style: normal;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+img {
+  padding: 0;
+  margin: 0;
+}
+img {
+  display: block;
+  height: auto;
+}
