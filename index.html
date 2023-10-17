@@ -6,55 +6,61 @@
     <meta title="Simply cholocate" />
     <meta name="description" content="The best chocolate in USA" />
     <title>Simply cholocate</title>
+    <link rel="stylesheet" href="./css/modal.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="header">
       <a href="./index.html" class="header-logo logo"
-        >SIMPLY CHOCOLATE
+        >Simply cholocate
         <img src="./img/chocolate-logo.svg" alt="" title="logo"
       /></a>
       <nav class="nav">
-        <ul class="header-nav">
-          <li class="header-item"><a href="" class="header-link">Home</a></li>
-          <li class="header-item">
-            <a href="" class="header-link">How it’s made?</a>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="" class="header-link">Home</a>
           </li>
-          <li class="header-item">
-            <a href="" class="header-link">Our products</a>
+          <li class="nav-item">
+            <a href="" class="header-link">How it's made</a>
           </li>
-          <li class="header-item">
-            <a href="" class="header-link">Top sellers</a>
+          <li class="nav-item">
+            <a href="" class="nav-link">Our products</a>
           </li>
-          <li class="header-item">
-            <a href="" class="header-link">Chocolate</a>
+          <li class="nav-item">
+            <a href="" class="nav-link">Top sellers</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Chocolate</a>
           </li>
         </ul>
       </nav>
       <ul class="header-soc">
-        <li class="soc-item"><a href="" class="soc-link"></a></li>
-        <li class="soc-item"><a href="" class="soc-link"></a></li>
+        <li class="soc-item"><a href="" class="soc-link" width="24"></a></li>
+        <li class="soc-item"><a href="" class="soc-link" width="24"></a></li>
       </ul>
     </header>
     <main>
       <section class="hero">
-        <h1>
+        <h1 class="hero-title">
           Treat yourself or a loved one to our finest ingredients for a moment
           of pure delight!
         </h1>
-        <ul>
-          <li><button type="button">Buy now</button></li>
-          <li><button type="button">How it’s made</button></li>
-        </ul>
-        <button type="button">scroll down</button>
-        <img src="#" alt="" />
+
+        <button class="hero-btn btn" type="button">Buy now</button>
+        <a href="#made" class="hero-link">How it’s made</a>
+
+        <a href="" class="scroll"
+          >scroll down
+          <img src="./img/hero-arrow.svg" alt="" />
+        </a>
       </section>
       <section class="benefits">
-        <ul>
+        <h2 class="benefits-title">Benefits</h2>
+        <ul class="benefits-list">
           <li>
             <img src="./img/benefit-icon-1.svg" alt="" />
             <!-- <svg></svg> -->
-            <h2>Unsurpassed taste</h2>
+            <h3>Unsurpassed taste</h3>
             <p>
               Crafted with the finest quality cocoa beans and a dedication to
               perfection, each bite is a decadent experience that simply cannot
@@ -65,7 +71,7 @@
           <li>
             <img src="./img/benefit-icon-2.svg" alt="" />
             <!-- <svg></svg> -->
-            <h2>Affordable price</h2>
+            <h3>Affordable price</h3>
             <p>
               Indulge in high-quality chocolate without breaking the bank with
               Simply Chocolate's selection of affordable treats. Enjoy
@@ -77,7 +83,7 @@
           <li>
             <img src="./img/benefit-icon-3.svg" alt="" />
             <!-- <svg></svg> -->
-            <h2>Own production</h2>
+            <h3>Own production</h3>
             <p>
               We take pride in our own production process, ensuring that every
               step is carefully crafted to perfection. From selecting the finest
@@ -88,7 +94,7 @@
         </ul>
       </section>
       <section class="ingredients">
-        <h2>IT ALL ADDS UP TO ONE EXCEPTIONAL <span>TASTE</span> SENSATION</h2>
+        <h2>It all adds up to one exceptional <span>taste</span> sensation</h2>
         <p>
           At Simply Chocolate, we believe that the secret to exceptional
           chocolate is in the details. From the sourcing of the finest
@@ -97,27 +103,34 @@
         </p>
         <ul>
           <li>
-            <img src="./img/ingredient-1.png" alt="" />
-            <p>mILK CHOCOLATE</p>
+            <img src="./img/ingredient-1.png" alt="" width="206" />
+            <p>milk chocolate</p>
           </li>
           <li>
-            <img src="./img/ingredient-2.png" alt="" />
-            <p>Milk</p>
+            <img src="./img/ingredient-2.png" alt="" width="206" />
+            <p>milk</p>
           </li>
           <li>
-            <img src="./img/ingredient-3.png" alt="" />
+            <img src="./img/ingredient-3.png" alt="" width="206" />
             <p>nuts</p>
           </li>
           <li>
-            <img src="./img/ingredient-4.png" alt="" />
-            <p>sEMI - SWEET CHOCOLATE</p>
+            <img src="./img/ingredient-4.png" alt="" width="206" />
+            <p>semi - sweet chocolate</p>
           </li>
         </ul>
       </section>
-      <section class="cooking">
-        <h2>hOW IT’S <span>made?</span></h2>
+      <section id="made" class="cooking">
+        <h2>How it's <span>made?</span></h2>
         <div>
+          <!-- <video>
+            <source src="./video/chocolate.webp" type="video/webp" />
+            <source src="./video/chocolate.mp4" type="video/mp4" />
+          </video> -->
+          <!-- кастомна стилізація в основному відео додаються через джс бібліотеки -->
+          <!-- <iframe src="#" frameborder="0"></iframe> -- вставка чогось з іншого сайту -->
           <img src="./img/video-img.jpg" alt="" />
+          <button type="button"><img src="./img/play.svg" alt="" /></button>
           <p>
             Try our chocolates today and discover the perfect balance of flavor
           </p>
@@ -143,7 +156,7 @@
         </div>
       </section>
       <section class="products">
-        <h2>Our <span>pRODUCTS</span></h2>
+        <h2>Our <span>products</span></h2>
         <ul>
           <li>
             <img src="./img/product-1.png" alt="" />
@@ -153,7 +166,7 @@
           </li>
           <li>
             <img src="./img/product-2.png" alt="" />
-            <h3>APPLE&CRANBERRY</h3>
+            <h3>Apple&cranberry</h3>
             <p>Milk chocolate</p>
             <span>50 UAH</span>
           </li>
@@ -172,7 +185,7 @@
         </ul>
       </section>
       <section class="top-seller">
-        <h2><span>tOp</span> Sellers</h2>
+        <h2><span>Top</span> sellers</h2>
         <ul>
           <li><img src="./img/top-seller-1.jpg" alt="" /></li>
           <li><img src="./img/top-seller-2.jpg" alt="" /></li>
@@ -217,7 +230,7 @@
       </section>
       <section class="subscribe">
         <div>
-          <h2>exPLORE OUR NEW CHOCOLATE FIRST</h2>
+          <h2>Explore our new chocolate first</h2>
           <p>
             From the velvety texture to the rich and complex flavor, our New
             Chocolate is a true indulgence that will leave you craving more.
@@ -243,7 +256,7 @@
           <li><a href="./img/twitter.svg"></a></li>
         </ul>
       </address>
-      <ul>
+      <ul class="footer-anchor anchor">
         <li><a href="">Home</a></li>
         <li><a href="">How it’s made?</a></li>
         <li><a href="">Our products</a></li>
