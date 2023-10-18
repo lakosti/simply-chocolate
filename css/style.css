@@ -22,7 +22,7 @@
     transform: translateY(0);
   }
 } */
-
+/* unset === не встановлено // сброс */
 /* inset: 0 === top 0; bottom: 0; left: 0; rigth:0; */
 :root {
   --accent-color: #fd9222;
@@ -104,3 +104,5 @@ img {
   transform: rotate(-90deg) translateX(50%);
   transform-origin: 100% 0;
 }
+
+/* Mobile menu */
