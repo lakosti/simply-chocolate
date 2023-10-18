@@ -13,8 +13,9 @@
     <header class="header">
       <a href="./index.html" class="header-logo logo"
         >Simply cholocate
-        <img src="./img/chocolate-logo.svg" alt="" title="logo"
-      /></a>
+        <svg class="icon-logo" width="24" height="24">
+          <use href="./img/chocolate-logo.svg"></use></svg
+      ></a>
       <nav class="nav">
         <ul class="nav-list">
           <li class="nav-item">
@@ -46,7 +47,9 @@
           of pure delight!
         </h1>
 
-        <button class="hero-btn btn" type="button">Buy now</button>
+        <button class="hero-btn btn" data-modal-open type="button">
+          Buy now
+        </button>
         <a href="#made" class="hero-link">How it’s made</a>
 
         <a href="" class="scroll"
@@ -57,10 +60,9 @@
       <section class="benefits">
         <h2 class="benefits-title">Benefits</h2>
         <ul class="benefits-list">
-          <li>
+          <li class="benefits-item">
             <img src="./img/benefit-icon-1.svg" alt="" />
-            <!-- <svg></svg> -->
-            <h3>Unsurpassed taste</h3>
+            <h3 class="benefits-subtitle">Unsurpassed taste</h3>
             <p>
               Crafted with the finest quality cocoa beans and a dedication to
               perfection, each bite is a decadent experience that simply cannot
@@ -68,10 +70,9 @@
               Taste and discover a new level of chocolate bliss.
             </p>
           </li>
-          <li>
+          <li class="benefits-item">
             <img src="./img/benefit-icon-2.svg" alt="" />
-            <!-- <svg></svg> -->
-            <h3>Affordable price</h3>
+            <h3 class="benefits-subtitle">Affordable price</h3>
             <p>
               Indulge in high-quality chocolate without breaking the bank with
               Simply Chocolate's selection of affordable treats. Enjoy
@@ -80,10 +81,9 @@
               affordable luxury today.
             </p>
           </li>
-          <li>
+          <li class="benefits-item">
             <img src="./img/benefit-icon-3.svg" alt="" />
-            <!-- <svg></svg> -->
-            <h3>Own production</h3>
+            <h3 class="benefits-subtitle">Own production</h3>
             <p>
               We take pride in our own production process, ensuring that every
               step is carefully crafted to perfection. From selecting the finest
@@ -264,5 +264,19 @@
         <li><a href="">Chocolate is loved</a></li>
       </ul>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-btn" data-modal-close type="button">X</button>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta,
+          dignissimos. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Soluta, dignissimos. Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Soluta, dignissimos. Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Soluta, dignissimos. Lorem ipsum, dolor
+          sit amet consectetur adipisicing elit. Soluta, dignissimos.
+        </p>
+      </div>
+    </div>
+    <script src="./js/modal.js" type="module"></script>
   </body>
 </html>

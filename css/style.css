@@ -1,3 +1,29 @@
+/* TODO: how to center position absolute  */
+
+/* .element{
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+} */
+/* TODO: animation */
+/* .element-link {
+  animation: bounce 0.5s infinite reverse;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+} */
+
+/* inset: 0 === top 0; bottom: 0; left: 0; rigth:0; */
 :root {
   --accent-color: #fd9222;
   --accent-bg: #1e1823;
@@ -7,6 +33,11 @@
   --second-text-color: #ffffff;
   --ellipse-color: rgba(17, 17, 17, 0.1);
   --typical-margin: 50px;
+}
+/* Колір іконок переважно задають посиланню бо філ наслідується і розміри радіуса якщо іконка в кругу*/
+/* плавний перехід для якорів */
+html {
+  scroll-behavior: smooth;
 }
 * {
   box-sizing: border-box;
@@ -34,8 +65,42 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* @media screen and (min-width: 375px){
+  
+}
+@media screen and (min-width: 768px){
+  
+}
+@media screen and (min-width: 1200px){
+  
+} 
+@media screen and (min-width: 375px)(max-width: 768px){
+  
+}*/
 .container {
-  max-width: 1200px;
+  /* max-width: 1200px; */
+  width: 100%;
+  /* max-width:375px */
+  /* max-width:768px */
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 20px;
+}
+
+/* Колір іконок переважно задають посиланню бо філ наслідується і розміри радіуса якщо іконка в кругу*/
+.benefits-item {
+  position: relative;
+}
+
+.benefits-item:not(:last-child)::after {
+  /* абсолют робить елементи блоковими */
+  /* display: inline-block;   */
+  position: absolute;
+  top: 50%;
+  right: 0;
+  content: '';
+  width: 124px;
+  height: 1px;
+  background-color: var(--accent-bg);
+  transform: rotate(-90deg) translateX(50%);
+  transform-origin: 100% 0;
 }
