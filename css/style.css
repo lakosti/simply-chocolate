@@ -74,7 +74,7 @@ img {
 @media screen and (min-width: 1200px){
   
 } 
-@media screen and (min-width: 375px)(max-width: 768px){
+@media screen and (min-width: 375px)(max-width: 767.98px){
   
 }*/
 .container {
@@ -85,6 +85,12 @@ img {
   margin: 0 auto;
   padding: 0 20px;
 }
+/* .container {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 20px;
+} */
 
 /* Колір іконок переважно задають посиланню бо філ наслідується і розміри радіуса якщо іконка в кругу*/
 .benefits-item {
