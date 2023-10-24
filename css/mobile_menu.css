@@ -1,0 +1,49 @@
+.button {
+}
+.burger-icon {
+}
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(100%);
+  /* повністю заховане */
+
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+  transition: transform 300ms ease-in;
+}
+.menu-container.is-open {
+  transform: translateX(0);
+  /* повністью видиме */
+  /* додати скрипт на is open */
+}
+.mobal-menu-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+.mobal-menu-icon {
+}
+.mobile-menu-list {
+  /* margin-bottom: auto; */
+}
+.mobile-menu-item {
+}
+.mobile-menu-link {
+}
+.mob-contacts-list {
+}
+.mob-contacts-item {
+}
+.mob-contacts-link {
+}
+.mob-soc-list {
+}
+.mob-soc-item {
+}
+.mob-soc-icon {
+}
+/* TODO: ctr + sift + стрілочка ----- виділити всі картинки з фігми
+натиснути + щоб створити ще і 2x і викачати всі разом прописати префікс @2x*/
